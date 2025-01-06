@@ -9,7 +9,7 @@ public class MultiThreadClient {
         ExecutorService exs= Executors.newFixedThreadPool(20);
         int i;
         Future<Integer> f=null;
-        for(i=0;i<100;i++) {
+        for(i=0;i<1000;i++) {
             ThreadControl thread=new ThreadControl(i,true);
             f=exs.submit(thread);
         }

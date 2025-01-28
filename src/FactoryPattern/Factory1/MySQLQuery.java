@@ -1,4 +1,4 @@
-package FactoryPattern;
+package FactoryPattern.Factory1;
 
 public class MySQLQuery implements Query {
 

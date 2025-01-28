@@ -1,20 +1,21 @@
-package FactoryPattern;
+package FactoryPattern.Factory1;
 
-public class MySQLDBFactory implements DatabaseFactory {
+public class PGDBFactory implements DatabaseFactory {
+
     @Override
     public Database createDatabase() {
-        return new MySQLDB();
+        return new PostGreSQL();
     }
 
     @Override
     public Query selectQuery(String statement) {
-        MySQLQuery query=new MySQLQuery();
+        PGQuery query=new PGQuery();
         query.createQuery();
         return query;
     }
 
     @Override
     public void execute(Query q) {
-        System.out.println("MySQL Executed");
+        System.out.println("PostGreSQL executed");
     }
 }

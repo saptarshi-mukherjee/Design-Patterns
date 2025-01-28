@@ -1,4 +1,4 @@
-package FactoryPattern;
+package FactoryPattern.Factory1;
 
 public class DBFactoryFactory {
     public static DatabaseFactory getDBFactory(SupportedDB db_type) {

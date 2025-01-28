@@ -1,4 +1,4 @@
-package FactoryPattern;
+package FactoryPattern.Factory1;
 
 public interface DatabaseFactory {
     public Database createDatabase();

@@ -1,6 +1,4 @@
-package FactoryPattern;
-
-import javax.xml.crypto.Data;
+package FactoryPattern.Factory1;
 
 public interface Database {
     public void refresh();
